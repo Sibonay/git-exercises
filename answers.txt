@@ -1,0 +1,26 @@
+Basic Question Answers
+
+1. Go to https://github.com/taylorc93/git-exercises, click the fork option, and follow github's instructions
+
+2. Run 'git log' and count how many commits there are. 
+
+PRO: run 'git rev-list HEAD --count'.  Found on http://stackoverflow.com/questions/677436/how-to-get-the-git-commit-count
+
+3. Create p3.txt, run 'git add p3.txt', then run "git commit -m 'added problem 3 answer' "
+
+4. Run 'git push origin master'
+
+5. Run 'git reset --hard HEAD~1'. 'git reset --hard HEAD^' will also work.  To sync your remote up properly, you'll need to run 'git push --force origin master' 
+
+
+Advanced Question Answers
+
+1. Run 'git branch' to list the local branches and 'git branch -r' to list the remote branches
+
+2. Run 'git branch advanced', then 'git checkout advanced'.  Make a commit the same way you would on master
+
+3. While on the advanced branch, run 'git push origin advanced'
+
+4. Run 'git checkout master', then 'git merge advanced'
+
+5. Run 'git branch -d advanced' and 'git push origin --delete advanced' (can also run 'git push origin :advanced')
